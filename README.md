@@ -18,7 +18,7 @@ You can also follow along in our video tutorial [here](https://www.youtube.com/w
 
 Here is the structure for the app, all core files are found in `app/`:
 
-```
+
 .
 ├── app                          # Main application directory (Expo Router)
 │   ├── _layout.tsx              # Root layout component for the app
@@ -53,7 +53,7 @@ Here is the structure for the app, all core files are found in `app/`:
 ├── scripts                      
 │   └── reset-project.js         # Project reset script
 └── tsconfig.json                # TypeScript configuration
-```
+
 ## Publishing your app
 
 The following steps will guide you through deploying your app from Replit to your iOS device. This tutorial covers:
@@ -83,35 +83,35 @@ For additional details, refer to the Apple and Expo documentation.
 3. **Initialize EAS Project**
    Click the dropdown underneath the "Run" button and select "EAS Init"
    Alternatively, you can run:
-   ```bash
+   bash
    npx eas init
-   ```
+   
    - Creates a new EAS project in the current directory
    - Follow the interactive prompts to configure your project
 
 4. **Update EAS Configuration**
    Click the dropdown underneath the "Run" button and select "EAS Update"
    Alternatively, you can run:
-   ```bash
+   bash
    npx eas update --auto
-   ```
+   
    - Sets up Expo Application Services for build management
    - Creates necessary build profiles in eas.json
    - Configures over-the-air updates capability
 
    Expected output:
-   ```bash
+   bash
    [expo-cli] Starting Metro Bundler
    [expo-cli] 
    ⠸ Exporting...
-   ```
+   
 
 5. **Build iOS Preview**
    Click the dropdown underneath the "Run" button and select "EAS Build iOS"
    Alternatively, you can run:
-   ```bash
+   bash
    npx eas build --platform ios --profile preview
-   ```
+   
    - Generates a development build optimized for testing
    - Includes debugging tools and development features
    - Creates smaller build size compared to production builds
@@ -169,9 +169,9 @@ For additional details, refer to the Apple and Expo documentation.
 
 If you'd like to reset your project, run:
 
-```bash
+bash
 npm run reset-project
-```
+
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
