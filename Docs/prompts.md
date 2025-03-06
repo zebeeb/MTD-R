@@ -68,12 +68,12 @@ no edit requests now till I approve your plan
 are these changes inline with @Docs/project rules.md  @Docs/TechStack rules.md? analysis in the light of the balance between simplicity, bugs prevention, and scalability. note that this is the potential project scale scope @Docs/project scope.md 
 
 ## phase implementation 
-I approve, let's implement this plan above for phase 2.4 in @Setup Plan.md 
+I approve, let's implement this plan for phase 1.1 @Docs/setup plans/expo-setup.md
 
-- this is to serve the project @Project Scope 
-- follow the rules in @Stack rules   @Implementation rules 
-- stricktly follow the @.windsurfrules 
-
+- this is to serve the project @Docs/project scope.md
+- follow the rules in @Docs/TechStack rules.md  
+- stricktly follow the @Docs/project rules.md
+  
 # Code review
 I want you to review your own code in phase 2.4 from the @Setup Plan.md , following the @Code Review rules 
 

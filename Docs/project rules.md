@@ -19,4 +19,4 @@ So i need you to be surgical and laser focused when requested to plan or impleme
 
 ## Replit Lessons
 
-- 
+- **Prevent Premature Complexity**: Never create folder structures, utilities, or configurations before they are actually needed for a specific feature. Only implement the minimal code needed for the current step. Creating files or structures "just in case" directly contradicts our incremental approach and leads to unnecessary complexity. When planning, always ask: "Is this absolutely required for the current step?" If not, postpone it. 
