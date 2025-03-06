@@ -54,8 +54,8 @@ Then in the @TechStack rules , add rules for your self that makes you produce th
 - be as restricted and simple in the practices as possible, so that we don't growing complexities in the code base
 - these rules must be followed strictly by you.
 
-## setup plan
-
+# phases------------------
+## phase plan
 now lets proceed with @Setup Plan.md . for phase 1.1 (Expo Setup) give me a detailed step by step plan 
 
 - define the steps in the light of @Docs/project rules.md
@@ -63,20 +63,9 @@ now lets proceed with @Setup Plan.md . for phase 1.1 (Expo Setup) give me a deta
 follow the rules in @Docs/TechStack rules.md
 
 no edit requests now till I approve your plan
-# phases------------------
-## phase plan
-now lets proceed with phase 2.4 in @Setup Plan.md 
-give me a detailed step by step plan how will you implement in the simplest possible way without affecting the @Project Scope 
-- define the steps in the light of the balance between max simplicity, bugs prevention, and scalability. 
-- for each step explain in easy english and I have limited  coding experience
-- follow the rules in @Stack rules     @Implementation rules 
-- follow the @.windsurfrules    
-- no implementation now till I approve your plan
 
 ## phase plan review 
-are these changes inline with @.windsurfrules  @Implementation rules   @Stack rules   ? 
-analysis in the light of the balance between simplicity, bugs prevention, and scalability. 
-note that this is the potential project scale scope @Project Scope oject Scope 
+are these changes inline with @Docs/project rules.md  @Docs/TechStack rules.md? analysis in the light of the balance between simplicity, bugs prevention, and scalability. note that this is the potential project scale scope @Docs/project scope.md 
 
 ## phase implementation 
 I approve, let's implement this plan above for phase 2.4 in @Setup Plan.md 
