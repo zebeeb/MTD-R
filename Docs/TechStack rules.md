@@ -193,6 +193,16 @@ try {
 - Document all platform-specific code thoroughly in Docs/platform-specific changes.md
 - Always try platform-agnostic solutions first
 
+## 9. Accessibility
+
+### 9.1 Core A11y Requirements
+- Use semantic HTML/components and proper heading hierarchy
+- Ensure keyboard navigation for all interactive elements
+- Maintain 4.5:1 contrast ratio for all text
+- Add aria-labels to critical interactive elements
+- Test with screen readers on critical user flows
+- Document which components have specific a11y enhancements in Docs/accessibility.md
+
 ## 10. Version Control
 
 ### 10.1 Commit Rules

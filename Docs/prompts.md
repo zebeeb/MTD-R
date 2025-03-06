@@ -56,13 +56,13 @@ Then in the @TechStack rules , add rules for your self that makes you produce th
 
 ## setup plan
 
-now lets proceed with @Setup Plan.md  phase 2.2
-give me a detailed step by step plan how will you set up (phase 2.2) in the simplest possible way without affecting the @Project Scope 
-- define the steps in the light of the balance between max simplicity, bugs prevention, and scalability. 
-- for each step explain in plain english and I don't have a coding experience
-- follow the rules in @Stack rules    @Implementation rules 
-- follow the @.windsurfrules  
-- no implementation now till I approve your plan
+now lets proceed with @Setup Plan.md . for phase 1.1 (Expo Setup) give me a detailed step by step plan 
+
+- define the steps in the light of @Docs/project rules.md
+- for each step explain in easy english and I have limited coding experience
+follow the rules in @Docs/TechStack rules.md
+
+no edit requests now till I approve your plan
 # phases------------------
 ## phase plan
 now lets proceed with phase 2.4 in @Setup Plan.md 
