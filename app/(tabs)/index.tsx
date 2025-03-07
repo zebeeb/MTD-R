@@ -1,39 +1,39 @@
-import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { StyleSheet } from 'react-native';
 
-/**
- * Home screen component - First screen of our Todo app
- */
-export default function HomeScreen(): React.ReactElement {
+import { ThemedText } from '@/components/ThemedText';
+import { ThemedView } from '@/components/ThemedView';
+// Import our Tamagui test component
+import { TamaguiTest } from '@/components/ui/TamaguiTest';
+
+export default function TabOneScreen() {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.content}>
-        <Text style={styles.title}>Muslim Todo</Text>
-        <Text style={styles.subtitle}>Coming soon</Text>
-      </View>
-    </SafeAreaView>
+    <ThemedView style={styles.container}>
+      <ThemedText style={styles.title}>Tab One</ThemedText>
+      <ThemedView
+        style={styles.separator}
+        darkColor="rgba(255,255,255,0.1)"
+        lightColor="rgba(0,0,0,0.1)"
+      />
+
+      {/* Add our Tamagui test component */}
+      <TamaguiTest />
+    </ThemedView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-  },
-  content: {
-    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 20,
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 10,
   },
-  subtitle: {
-    fontSize: 16,
-    color: '#666',
+  separator: {
+    marginVertical: 30,
+    height: 1,
+    width: '80%',
   },
 });
