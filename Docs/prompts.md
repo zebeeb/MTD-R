@@ -83,7 +83,7 @@ let's implement this plan
 - add comment above each edit explaining what this change it about
   
 # Code review
-I want you to review your own code in phase 1.1 from the @Docs/setup plan.md and detailed in @Docs/setup plans/expo-setup.md , following the @Docs/Code Review rules.md
+I want you to review your own code in phase 1.1 from the @Docs/setup plan.md and detailed in @Docs/setup plans/expo-setup.md , following the @Docs/Code Review rules.md  and @Docs/project rules.md
 
 review against our @Docs/TechStack rules.md, @Docs/project rules.md
 analysis in the light of the balance between simplicity, bugs prevention, and scalability. note that this is the potential project scale scope @Docs/project scope.md
