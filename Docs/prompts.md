@@ -54,29 +54,30 @@ Then in the @TechStack rules , add rules for your self that makes you produce th
 - be as restricted and simple in the practices as possible, so that we don't growing complexities in the code base
 - these rules must be followed strictly by you.
 
-# phases------------------
+# phases||||||||||||||||||||
 
-- don't provide edit requests till I approve your plans
+- don't provide edit requests till I approve your work
 - remember @Docs/project rules.md
 
 ## phase plan
 now lets proceed with @Docs/setup plan.md . for phase 1.2 (TypeScript Configuration) give me a detailed step by step plan
 
-define the steps in the light of @Docs/project rules.md
-for each step explain in easy english and I have limited coding experience
-make sure you don't prematurely add changes that will be covered in the future in @Docs/setup plan.md
-follow the rules in @Docs/TechStack rules.md
-no edit requests now till I approve your plan
+- define the steps in the light of @Docs/project rules.md
+- for each step explain in easy english and I have limited coding experience
+- make sure you don't prematurely add changes that will be covered in the future in @Docs/setup plan.md
+- follow the rules in @Docs/TechStack rules.md
+- no edit requests now till I approve your plan
 
 ## phase plan review 
 Review, are these changes inline with @Docs/project rules.md  @Docs/TechStack rules.md? analysis in the light of the balance between simplicity, bugs prevention, and scalability. note that this is the potential project scale scope @Docs/project scope.md 
-no edit requests now till I approve your plan
+- no edit requests now till I approve your plan.
+- give me complexity assessment for each step
 
 ## phase implementation 
 I approve, i added your plan in a doc @Docs/setup plans/typescript-config.md 
 let's implement this plan 
 
-- this implementation is to serve the project @Docs/project scope.md and tech stack setup plsn @Docs/setup plan.md
+- this implementation is to serve the project @Docs/project scope.md and tech stack setup plan @Docs/setup plan.md
 - follow the rules in @Docs/TechStack rules.md
 - stricktly follow the @Docs/project rules.md
 - {provide edit requests}

@@ -13,10 +13,10 @@ So i need you to be surgical and laser focused when requested to plan or impleme
 - Do not make changes to other parts of the app or introduce unrelated functionality.
 - Always balance between simplicity, bugs prevention, and scalability
 - reduce platform specific changes to keep the development fast and more maintainable, whenever there are platform specific changes needed, mention them before implementation
-- dont provide edit requests in your answer unless I mention {provide edit requests} explicitly
-- I don't have coding experience so when you explane something consider this in mind
+- I don't have coding experience so when you explain something consider this in mind
 - use illustrative emojis in your answers if it will help explain your ideas e.g. checkmark, X mark. also when asked for assessing something provide ratings (out of 5)
 
 ## Replit Lessons
 
-- **Prevent Premature Complexity**: Never create folder structures, utilities, or configurations before they are actually needed for a specific feature. Only implement the minimal code needed for the current step. Creating files or structures "just in case" directly contradicts our incremental approach and leads to unnecessary complexity. When planning, always ask: "Is this absolutely required for the current step?" If not, postpone it. 
+- **Prevent Premature Complexity**: Never create folder structures, utilities, or configurations before they are actually needed for a specific feature. Only implement the minimal code needed for the current step. Creating files or structures "just in case" directly contradicts our incremental approach and leads to unnecessary complexity. When planning, always ask: "Is this required for the current step?" If not, postpone it. 
+- Do NOT provide any edit requests in your responses unless I explicitly include the exact phrase "{provide edit requests}" in my message. Even if you think a code change would be helpful or if you've previously made suggestions, do not include proposed file changes, shell commands, or any other actionable edit requests without this specific permission phrase. Instead, focus on explaining concepts, providing analysis, or answering my questions directly.
