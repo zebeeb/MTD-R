@@ -51,6 +51,9 @@ json
 - Document "why" not "what" in comments
 - Keep comments updated when code changes
 
+### 1,5 environment configuration
+Before implementing any feature that interacts with configuration files, study the file format constraints. JSON files must only contain literal values (strings, numbers, booleans, arrays, objects), while JavaScript expressions require JS/TS files. When working with environment variables or dynamic values in configuration, always use the appropriate file format (e.g., app.config.js instead of app.json for Expo). Document any file format conversions in project documentation.
+
 ## 2. React Native & React Native Web
 
 ### 2.1 Components
