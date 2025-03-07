@@ -64,6 +64,7 @@ now lets proceed with @Docs/setup plan.md . for phase 1.2 (TypeScript Configurat
 
 - define the steps in the light of @Docs/project rules.md
 - for each step explain in easy english and I have limited coding experience
+- be thorogh in understanding the codebase and the documents mentioned here
 - make sure you don't prematurely add changes that will be covered in the future in @Docs/setup plan.md
 - follow the rules in @Docs/TechStack rules.md
 - no edit requests now till I approve your plan
