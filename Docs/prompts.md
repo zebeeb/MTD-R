@@ -56,7 +56,7 @@ Then in the @TechStack rules , add rules for your self that makes you produce th
 
 # phases------------------
 
-- no edit requests
+- don't provide edit requests till I approve your plans
 - remember @Docs/project rules.md
 
 ## phase plan
