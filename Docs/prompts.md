@@ -86,10 +86,10 @@ let's implement this plan
 # Code review
 I want you to review your own code in phase 1.1 from the @Docs/setup plan.md and detailed in @Docs/setup plans/expo-setup.md , following the @Docs/Code Review rules.md  and @Docs/project rules.md
 
-review against our @Docs/TechStack rules.md, @Docs/project rules.md
+review against our @Docs/TechStack rules.md
 analysis in the light of the balance between simplicity, bugs prevention, and scalability. note that this is the potential project scale scope @Docs/project scope.md
 dont mention issues that will be covered in future phases in the setup plan @Docs/setup plan.md unless its required to be done in this phase
-Don't provide edit requests for any changes now till I approve
+- Don't provide edit requests for any changes now till I approve
 
 
 

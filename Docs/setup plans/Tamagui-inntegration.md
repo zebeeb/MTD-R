@@ -39,6 +39,7 @@ Step 5: Verify Installation 🧪
 We'll run the app to verify that Tamagui is working correctly:
 
 - **What this does**: Tests that everything is functioning as expected
+- Include a verification step to check for dependency conflicts
 - **Why it matters**: Ensures we haven't broken anything and that Tamagui is ready to use
 - **Simple explanation**: This is like a quick test drive after adding a new part to your car
 
