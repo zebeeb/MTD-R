@@ -57,14 +57,14 @@ Then in the @TechStack rules , add rules for your self that makes you produce th
 # phases||||||||||||||||||||
 
 - don't provide edit requests till I approve your work
-- remember @Docs/project rules.md
+- remember the rules @Docs/project rules.md@Docs/TechStack rules.md
 
 ## phase plan
-now lets proceed with @Docs/setup plan.md . for phase 1.2 (TypeScript Configuration) give me a detailed step by step plan
+now lets proceed with @Docs/setup plan.md . for phase 2.1 (Zustand Implementation ) give me a detailed step by step plan
 
 - define the steps in the light of @Docs/project rules.md
 - for each step explain in easy english and I have limited coding experience
-- be thorogh in understanding the codebase and the documents mentioned here
+- before providing a plan, be extremely thorogh in understanding the codebase and the documents mentioned here 
 - make sure you don't prematurely add changes that will be covered in the future in @Docs/setup plan.md
 - follow the rules in @Docs/TechStack rules.md
 - no edit requests now till I approve your plan
@@ -81,6 +81,7 @@ let's implement this plan
 - this implementation is to serve the project @Docs/project scope.md and tech stack setup plan @Docs/setup plan.md
 - follow the rules in @Docs/TechStack rules.md
 - stricktly follow the @Docs/project rules.md
+- before implementing, be extremely thorogh in understanding the codebase and the documents mentioned here to prevent bugs
 - {provide edit requests}
 - add comment above each edit explaining what this change it about
   
