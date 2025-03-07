@@ -72,7 +72,7 @@ no edit requests now till I approve your plan
 I approve, i added your plan in a doc @Docs/setup plans/typescript-config.md 
 let's implement this plan 
 
-- this is to serve the project @Docs/project scope.md
+- this implementation is to serve the project @Docs/project scope.md and tech stack setup plsn @Docs/setup plan.md
 - follow the rules in @Docs/TechStack rules.md
 - stricktly follow the @Docs/project rules.md
 - {provide edit requests}
