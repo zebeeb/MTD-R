@@ -83,7 +83,7 @@ let's implement this plan
 - {provide edit requests}
 - add comment above each edit explaining what this change it about
   
-# Code review
+## Code review
 I want you to review your own code in phase 1.1 from the @Docs/setup plan.md and detailed in @Docs/setup plans/expo-setup.md , following the @Docs/Code Review rules.md  and @Docs/project rules.md
 
 - review against our @Docs/TechStack rules.md
@@ -92,14 +92,14 @@ analysis in the light of the balance between simplicity, bugs prevention, and sc
 - Don't provide edit requests for any changes now till I approve
 
 
-# bugs plan
+## bugs plan
 lets plan for fixing this bug following @Docs/bugs resolution rules.md , @Docs/project rules.md, and @Docs/TechStack rules.md
 
 - give me in details the plan for how you will solve this bug.
 - include code snippets
 - don't provide edit requests till I approve your work
 
-# bug fixing
+## bug fixing
 I approve, let's implement this plan
 
 - this implementation is to serve the project @Docs/project scope.md and tech stack setup plan @Docs/setup plan.md
