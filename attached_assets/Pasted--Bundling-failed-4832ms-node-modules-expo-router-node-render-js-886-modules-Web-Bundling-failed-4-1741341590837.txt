@@ -1,0 +1,43 @@
+λ Bundling failed 4832ms node_modules/expo-router/node/render.js (886 modules)
+Web Bundling failed 4865ms node_modules/expo-router/entry.js (960 modules)
+
+Metro error: app/(tabs)/index.tsx: Cannot find module '@tamagui/babel-plugin'
+Require stack:
+- /home/runner/workspace/node_modules/@babel/core/lib/config/files/plugins.js
+- /home/runner/workspace/node_modules/@babel/core/lib/config/files/index.js
+- /home/runner/workspace/node_modules/@babel/core/lib/index.js
+- /home/runner/workspace/node_modules/@expo/metro-config/build/transform-worker/metro-transform-worker.js
+- /home/runner/workspace/node_modules/@expo/metro-config/build/transform-worker/transform-worker.js
+- /home/runner/workspace/node_modules/metro/src/DeltaBundler/Worker.flow.js
+- /home/runner/workspace/node_modules/metro/src/DeltaBundler/Worker.js
+- /home/runner/workspace/node_modules/jest-worker/build/workers/processChild.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+
+
+Call Stack
+  <unknown> (file. It's possible that the missing plugin is loaded by a preset)
+  Module._resolveFilename (node:internal/modules/cjs/loader)
+  resolve (node:internal/modules/helpers)
+  loadPlugin.next (<anonymous>)
+  createDescriptor.next (<anonymous>)
+  Array.map (<anonymous>)
+  Generator.next (<anonymous>)
+  createDescriptors.next (<anonymous>)
+  createPluginDescriptors.next (<anonymous>)
+  Generator.next (<anonymous>)
+  mergeChainOpts.next (<anonymous>)
+  chainWalker.next (<anonymous>)
+  loadFileChain.next (<anonymous>)
+  mergeExtendsChain.next (<anonymous>)
+  chainWalker.next (<anonymous>)
+  buildRootChain.next (<anonymous>)
+  loadPrivatePartialConfig.next (<anonymous>)
+  loadFullConfig.next (<anonymous>)
+  transform.next (<anonymous>)
