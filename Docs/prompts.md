@@ -86,19 +86,24 @@ let's implement this plan
 # Code review
 I want you to review your own code in phase 1.1 from the @Docs/setup plan.md and detailed in @Docs/setup plans/expo-setup.md , following the @Docs/Code Review rules.md  and @Docs/project rules.md
 
-review against our @Docs/TechStack rules.md
+- review against our @Docs/TechStack rules.md
 analysis in the light of the balance between simplicity, bugs prevention, and scalability. note that this is the potential project scale scope @Docs/project scope.md
-dont mention issues that will be covered in future phases in the setup plan @Docs/setup plan.md unless its required to be done in this phase
+- dont mention issues that will be covered in future phases in the setup plan @Docs/setup plan.md unless its required to be done in this phase
 - Don't provide edit requests for any changes now till I approve
 
 
+# bugs plan
+lets plan for fixing this bug following @Docs/bugs resolution rules.md , @Docs/project rules.md, and @Docs/TechStack rules.md
 
-# plan for fixes
+- give me in details the plan for how you will solve this bug.
+- include code snippets
+- don't provide edit requests till I approve your work
 
-ok give me a plan for how you will solve this issue (Implement environment validation)?
+# bug fixing
+I approve, let's implement this plan
 
-give me a detailed plan followiing our @Implementation rules and @Stack rules 
-don't implement till I approve the plan
-
-
-
+- this implementation is to serve the project @Docs/project scope.md and tech stack setup plan @Docs/setup plan.md
+- follow the rules in @Docs/TechStack rules.md
+- stricktly follow the @Docs/project rules.md and @Docs/bugs resolution rules.md
+- {provide edit requests}
+- add comment above each edit explaining what this change it about
