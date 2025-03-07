@@ -15,7 +15,7 @@ So i need you to be surgical and laser focused when requested to plan or impleme
 - reduce platform specific changes to keep the development fast and more maintainable, whenever there are platform specific changes needed, mention them before implementation
 - dont provide edit requests in your answer unless I mention {provide edit requests} explicitly
 - I don't have coding experience so when you explane something consider this in mind
-- use illustrative emojis in your answers for better explaination e.g. checkmark, X mark. also when asked for assessing something provide ratings (out of 5)
+- use illustrative emojis in your answers if it will help explain your ideas e.g. checkmark, X mark. also when asked for assessing something provide ratings (out of 5)
 
 ## Replit Lessons
 

@@ -56,31 +56,35 @@ Then in the @TechStack rules , add rules for your self that makes you produce th
 
 # phases------------------
 ## phase plan
-now lets proceed with @Setup Plan.md . for phase 1.1 (Expo Setup) give me a detailed step by step plan 
+now lets proceed with @Docs/setup plan.md . for phase 1.2 (TypeScript Configuration) give me a detailed step by step plan
 
-- define the steps in the light of @Docs/project rules.md
-- for each step explain in easy english and I have limited coding experience
+define the steps in the light of @Docs/project rules.md
+for each step explain in easy english and I have limited coding experience
+make sure you don't prematurely add changes that will be covered in the future in @Docs/setup plan.md
 follow the rules in @Docs/TechStack rules.md
-
 no edit requests now till I approve your plan
 
 ## phase plan review 
-are these changes inline with @Docs/project rules.md  @Docs/TechStack rules.md? analysis in the light of the balance between simplicity, bugs prevention, and scalability. note that this is the potential project scale scope @Docs/project scope.md 
+Review, are these changes inline with @Docs/project rules.md  @Docs/TechStack rules.md? analysis in the light of the balance between simplicity, bugs prevention, and scalability. note that this is the potential project scale scope @Docs/project scope.md 
+no edit requests now till I approve your plan
 
 ## phase implementation 
-I approve, let's implement this plan for phase 1.1 @Docs/setup plans/expo-setup.md
+I approve, i added your plan in a doc @Docs/setup plans/typescript-config.md 
+let's implement this plan 
 
 - this is to serve the project @Docs/project scope.md
-- follow the rules in @Docs/TechStack rules.md  
+- follow the rules in @Docs/TechStack rules.md
 - stricktly follow the @Docs/project rules.md
+- {provide edit requests}
+- add comment above each edit explaining what this change it about
   
 # Code review
-I want you to review your own code in phase 2.4 from the @Setup Plan.md , following the @Code Review rules 
+I want you to review your own code in phase 1.1 from the @Docs/setup plan.md and detailed in @Docs/setup plans/expo-setup.md , following the @Docs/Code Review rules.md
 
-- review against our @Stack rules   and @Implementation rules    
-- analysis in the light of the balance between simplicity, bugs prevention, and scalability. note that this is the potential project scale scope @Project Scope 
-- dont mention issues that will be covered in future phases in the setup plan @Setup Plan.md  unless its required to be done in this phase
-- Don't implement any changes now till I approve
+review against our @Docs/TechStack rules.md, @Docs/project rules.md
+analysis in the light of the balance between simplicity, bugs prevention, and scalability. note that this is the potential project scale scope @Docs/project scope.md
+dont mention issues that will be covered in future phases in the setup plan @Docs/setup plan.md unless its required to be done in this phase
+Don't provide edit requests for any changes now till I approve
 
 
 

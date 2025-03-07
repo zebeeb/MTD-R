@@ -8,8 +8,16 @@ channel = "stable-24_05"
 localPort = 8081
 externalPort = 80
 
+[[ports]]
+localPort = 8082
+externalPort = 3000
+
+[[ports]]
+localPort = 8083
+externalPort = 3001
+
 [workflows]
-runButton = "Dev Server"
+runButton = "Run"
 
 [[workflows.workflow]]
 name = "Dev Server"
@@ -50,3 +58,11 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "npx eas build --platform android --profile preview"
+
+[[workflows.workflow]]
+name = "Run"
+author = 40156405
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npx expo start --web"
