@@ -5,7 +5,7 @@ import { createInterFont } from '@tamagui/font-inter'
 import { shorthands } from '@tamagui/shorthands'
 import { themes, tokens } from '@tamagui/themes'
 
-// Create font configurations
+// Create font configurations without requiring Inter fonts
 const headingFont = createInterFont({
   size: {
     // Define standard font sizes
@@ -31,10 +31,7 @@ const headingFont = createInterFont({
   letterSpacing: {
     4: 0,
   },
-  face: {
-    400: { normal: 'InterRegular' },
-    600: { normal: 'InterSemiBold' },
-  },
+  // Removed face configuration that references missing font files
 })
 
 // Create the base Tamagui configuration

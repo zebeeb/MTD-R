@@ -24,10 +24,9 @@ export const unstable_settings = {
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
+  // Removed references to missing Inter fonts to prevent errors
   const [loaded, error] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-    InterRegular: require('../assets/fonts/Inter-Regular.ttf'),
-    InterSemiBold: require('../assets/fonts/Inter-SemiBold.ttf'),
     ...FontAwesome.font,
   });
 
