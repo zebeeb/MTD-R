@@ -55,6 +55,10 @@ Then in the @TechStack rules , add rules for your self that makes you produce th
 - these rules must be followed strictly by you.
 
 # phases------------------
+
+- no edit requests
+- remember @Docs/project rules.md
+
 ## phase plan
 now lets proceed with @Docs/setup plan.md . for phase 1.2 (TypeScript Configuration) give me a detailed step by step plan
 
