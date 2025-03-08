@@ -4,24 +4,20 @@ modules = ["nodejs-20"]
 [nix]
 channel = "stable-24_05"
 
-# Properly expose Expo development server port
 [[ports]]
 localPort = 8081
 externalPort = 80
-exposeLocalhost = false
 
 [[ports]]
-localPort = 19000
+localPort = 8082
 externalPort = 3000
-exposeLocalhost = false
 
 [[ports]]
-localPort = 19001
+localPort = 8083
 externalPort = 3001
-exposeLocalhost = false
 
 [workflows]
-runButton = "Dev Server"
+runButton = "Run"
 
 [[workflows.workflow]]
 name = "Dev Server"

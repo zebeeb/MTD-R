@@ -4,19 +4,7 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 Expo is an open-source React Native framework for apps that run natively on Android, iOS, and the web. Expo brings together the best of mobile and the web and enables many important features for building and scaling an app such as live updates, instantly sharing your app, and web support. 
 
-Using Replit, you can build Expo apps from BOTH your desktop and mobile device.
-
-## 📱 Connecting with Expo Go
-
-To connect your mobile device to this Replit project:
-
-1. Click the **Dev Server** button (or Run button which is now configured for Dev Server)
-2. Wait for the Expo development server to start
-3. Scan the QR code displayed in the console:
-   - **Android**: Use the Expo Go app to scan
-   - **iOS**: Use the Camera app to scan
-
-For troubleshooting connection issues, see the [Connection Guide](docs/connection-guide.md).es.
+Using Replit, you can build Expo apps from BOTH your desktop and mobile devices.
 
 ## Get started
 
