@@ -36,8 +36,6 @@ Step 3: Create Error Boundary Component 🛡️
 
 We'll implement a basic error boundary component to prevent the entire app from crashing when an error occurs in a component.
 - Create a basic placeholder error boundary file with minimal functionality
-- Implement actual error boundaries when we start building real UI components
-- Enhance error boundaries as we add more complex features
 
 
 This component is important for maintaining app stability and providing a better user experience.
@@ -62,10 +60,12 @@ Step 5: Create Basic User-Facing Error Components 👤
     - Display a simple error message
     - Optionally show a retry button
     - Handle the most basic error presentation needs
-2. **Postpone specialized error components** until specific features require them, such as:
+2. **Postpone specialized error components** 
     - Network error displays
     - Form validation error displays
     - Authentication error displays
+
+
 Step 6: Test Error Handling Implementation 🧪
 
 
