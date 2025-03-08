@@ -1,0 +1,40 @@
+
+Logs for your project will appear below. Press Ctrl+C to exit.
+λ Bundled 2742ms node_modules/expo-router/node/render.js (1647 modules)
+Web node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100.0% (1506/15
+06)λ  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web Bundled 5552ms node_modules/expo-router/entry.js (1506 modules)
+Error: Unauthorized request from https://b44ab7e9-66e2-4b72-b898-49366f828ec5-00-1l8h7zjddftws.spock.replit.dev:3002. This may happen because of a conflicting browser extension to intercept HTTP requests. Please try again without browser extensions or using incognito mode.
+    at /home/runner/workspace/node_modules/@expo/cli/src/start/server/middleware/CorsMiddleware.ts:27:11
+    at call (/home/runner/workspace/node_modules/connect/index.js:239:7)
+    at next (/home/runner/workspace/node_modules/connect/index.js:183:5)
+    at /home/runner/workspace/node_modules/@expo/cli/src/start/server/middleware/ContextModuleSourceMapsMiddleware.ts:29:7
+    at call (/home/runner/workspace/node_modules/connect/index.js:239:7)
+    at next (/home/runner/workspace/node_modules/connect/index.js:183:5)
+    at middleware (/home/runner/workspace/node_modules/@expo/cli/src/start/server/middleware/ExpoMiddleware.ts:62:16)
+    at call (/home/runner/workspace/node_modules/connect/index.js:239:7)
+    at next (/home/runner/workspace/node_modules/connect/index.js:183:5)
+    at Function.handle (/home/runner/workspace/node_modules/connect/index.js:186:3)
+Error: Unauthorized request from https://b44ab7e9-66e2-4b72-b898-49366f828ec5-00-1l8h7zjddftws.spock.replit.dev:3002. This may happen because of a conflicting browser extension to intercept HTTP requests. Please try again without browser extensions or using incognito mode.
+    at /home/runner/workspace/node_modules/@expo/cli/src/start/server/middleware/CorsMiddleware.ts:27:11
+    at call (/home/runner/workspace/node_modules/connect/index.js:239:7)
+    at next (/home/runner/workspace/node_modules/connect/index.js:183:5)
+    at /home/runner/workspace/node_modules/@expo/cli/src/start/server/middleware/ContextModuleSourceMapsMiddleware.ts:29:7
+    at call (/home/runner/workspace/node_modules/connect/index.js:239:7)
+    at next (/home/runner/workspace/node_modules/connect/index.js:183:5)
+    at middleware (/home/runner/workspace/node_modules/@expo/cli/src/start/server/middleware/ExpoMiddleware.ts:62:16)
+    at call (/home/runner/workspace/node_modules/connect/index.js:239:7)
+    at next (/home/runner/workspace/node_modules/connect/index.js:183:5)
+    at Function.handle (/home/runner/workspace/node_modules/connect/index.js:186:3)
+Web Bundled 1042ms node_modules/expo-router/entry.js (1506 modules)
+Error: Unauthorized request from https://b44ab7e9-66e2-4b72-b898-49366f828ec5-00-1l8h7zjddftws.spock.replit.dev:3002. This may happen because of a conflicting browser extension to intercept HTTP requests. Please try again without browser extensions or using incognito mode.
+    at /home/runner/workspace/node_modules/@expo/cli/src/start/server/middleware/CorsMiddleware.ts:27:11
+    at call (/home/runner/workspace/node_modules/connect/index.js:239:7)
+    at next (/home/runner/workspace/node_modules/connect/index.js:183:5)
+    at /home/runner/workspace/node_modules/@expo/cli/src/start/server/middleware/ContextModuleSourceMapsMiddleware.ts:29:7
+    at call (/home/runner/workspace/node_modules/connect/index.js:239:7)
+    at next (/home/runner/workspace/node_modules/connect/index.js:183:5)
+    at middleware (/home/runner/workspace/node_modules/@expo/cli/src/start/server/middleware/ExpoMiddleware.ts:62:16)
+    at call (/home/runner/workspace/node_modules/connect/index.js:239:7)
+    at next (/home/runner/workspace/node_modules/connect/index.js:183:5)
+    at Function.handle (/home/runner/workspace/node_modules/connect/index.js:186:3)
