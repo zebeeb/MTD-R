@@ -9,6 +9,10 @@ export type EnvironmentVariables = {
   // API keys and endpoints
   API_URL?: string;
   
+  // Supabase configuration
+  SUPABASE_URL?: string;
+  SUPABASE_ANON_KEY?: string;
+  
   // Feature flags
   ENABLE_AI_FEATURES?: boolean;
   
