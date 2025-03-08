@@ -70,7 +70,7 @@ now lets proceed with @Docs/setup plan.md . for phase 2.1 (Zustand Implementatio
 - no edit requests now till I approve your plan
 
 ## phase plan review 
-ok i prepared this document for the error handling plan profided by you @Docs/setup plans/error handling.md
+ok i prepared this document for the error handling plan provided by you @Docs/setup plans/error handling.md
 
 Review, are these changes inline with @Docs/project rules.md  @Docs/TechStack rules.md? analysis in the light of the balance between simplicity, bugs prevention, and scalability. note that this is the potential project scale scope @Docs/project scope.md 
 - can there be a chance that any of these steps, or their details to be prematurely developed and we should postpone them for later?
