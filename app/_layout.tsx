@@ -1,5 +1,6 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
+import { QueryClientProvider } from '@tanstack/react-query';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
@@ -9,6 +10,9 @@ import { TamaguiProvider } from 'tamagui';
 import config from '../tamagui.config';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
+
+// Import our query client configuration
+import { queryClient } from '../utils/queryClient';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -54,11 +58,14 @@ function RootLayoutNav() {
   return (
     // Wrap the app with TamaguiProvider
     <TamaguiProvider config={config} defaultTheme={colorScheme === 'dark' ? 'dark' : 'light'}>
-      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-        <Stack>
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        </Stack>
-      </ThemeProvider>
+      {/* Wrap the app with QueryClientProvider to make React Query available throughout the app */}
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+          <Stack>
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          </Stack>
+        </ThemeProvider>
+      </QueryClientProvider>
     </TamaguiProvider>
   );
 }
