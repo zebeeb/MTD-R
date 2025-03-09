@@ -23,10 +23,6 @@ export const getEnvironment = (): EnvironmentVariables => {
     // API Configuration
     API_URL: expoConstants?.API_URL || 'https://api.example.com',
     
-    // Supabase Configuration
-    SUPABASE_URL: expoConstants?.SUPABASE_URL || 'https://gdhqjnhfhsfrahznlxzg.supabase.co',
-    SUPABASE_ANON_KEY: expoConstants?.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdkaHFqbmhmaHNmcmFoem5seHpnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE0NDI5NjksImV4cCI6MjA1NzAxODk2OX0.jHH3rJfaRrVd8xI4obofytC1VGSs3PwR2zOklREadzs',
-    
     // Feature Flags
     ENABLE_AI_FEATURES: expoConstants?.ENABLE_AI_FEATURES || false,
     
