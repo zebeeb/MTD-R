@@ -1,11 +1,11 @@
 
 // This file creates a reusable Supabase client connection
 import { createClient } from '@supabase/supabase-js';
-import { getEnvironmentVariable } from './environment';
+import { env } from './environment';
 
 // Get Supabase credentials from environment variables
-const supabaseUrl = getEnvironmentVariable('SUPABASE_URL');
-const supabaseAnonKey = getEnvironmentVariable('SUPABASE_ANON_KEY');
+const supabaseUrl = env.SUPABASE_URL;
+const supabaseAnonKey = env.SUPABASE_ANON_KEY;
 
 // Validate that credentials exist
 if (!supabaseUrl || !supabaseAnonKey) {

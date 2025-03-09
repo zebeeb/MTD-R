@@ -4,6 +4,8 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 // Import our Tamagui test component
 import { TamaguiTest } from '@/components/ui/TamaguiTest';
+// Import Supabase test component to verify connection
+import { SupabaseConnectionTest } from '@/components/SupabaseConnectionTest';
 
 export default function TabOneScreen() {
   return (
@@ -17,6 +19,9 @@ export default function TabOneScreen() {
 
       {/* Add our Tamagui test component */}
       <TamaguiTest />
+      
+      {/* Add Supabase connection test component */}
+      <SupabaseConnectionTest />
     </ThemedView>
   );
 }
