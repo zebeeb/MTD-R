@@ -110,6 +110,6 @@ I approve, let's implement this plan
 - this implementation is to serve the project @Docs/project scope.md and tech stack setup plan @Docs/setup plan.md
 - follow the rules in @Docs/TechStack rules.md
 - stricktly follow the @Docs/project rules.md and @Docs/bugs resolution rules.md
-- before providing a plan, be extremely thorough in understanding the documents mentioned here and the codebase
+- before implementing, be extremely thorough in understanding the documents mentioned here and the codebase
 - {provide edit requests}
 - add comment above each edit explaining what this change it about
