@@ -10,7 +10,9 @@ export function useThemeColor(
   props: { light?: string; dark?: string },
   colorName: keyof typeof Colors.light & keyof typeof Colors.dark
 ) {
-  const theme = useColorScheme() ?? 'light';
+  // Use || instead of ?? for more robust fallback handling
+  // This ensures we always have a valid theme, even during hydration
+  const theme = useColorScheme() || 'light';
   const colorFromProps = props[theme];
 
   if (colorFromProps) {

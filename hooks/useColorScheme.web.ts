@@ -3,6 +3,7 @@ import { useColorScheme as useRNColorScheme } from 'react-native';
 
 /**
  * To support static rendering, this value needs to be re-calculated on the client side for web
+ * This implementation ensures we always return a valid theme value to prevent errors
  */
 export function useColorScheme() {
   const [hasHydrated, setHasHydrated] = useState(false);
@@ -13,9 +14,10 @@ export function useColorScheme() {
 
   const colorScheme = useRNColorScheme();
 
-  if (hasHydrated) {
-    return colorScheme;
+  // During hydration or if colorScheme is undefined, return 'light'
+  if (!hasHydrated || colorScheme === undefined || colorScheme === null) {
+    return 'light';
   }
 
-  return 'light';
+  return colorScheme;
 }
