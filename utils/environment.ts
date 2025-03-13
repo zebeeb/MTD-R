@@ -23,6 +23,10 @@ export const getEnvironment = (): EnvironmentVariables => {
     // API Configuration
     API_URL: expoConstants?.API_URL || 'https://api.example.com',
     
+    // Supabase Configuration
+    SUPABASE_URL: expoConstants?.SUPABASE_URL || '',
+    SUPABASE_ANON_KEY: expoConstants?.SUPABASE_ANON_KEY || '',
+    
     // Feature Flags
     ENABLE_AI_FEATURES: expoConstants?.ENABLE_AI_FEATURES || false,
     

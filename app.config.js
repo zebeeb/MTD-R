@@ -14,6 +14,8 @@ module.exports = {
     newArchEnabled: true,
     extra: {
       API_URL: process.env.API_URL,
+      SUPABASE_URL: process.env.SUPABASE_URL,
+      SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY,
       ENABLE_AI_FEATURES: process.env.ENABLE_AI_FEATURES === "true",
       APP_NAME: process.env.APP_NAME
     },
