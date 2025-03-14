@@ -9,9 +9,6 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
-    "test:e2e": "maestro test maestro/flows",
-    "test:e2e:single": "maestro test",
-    "setup:maestro": "node ./scripts/setup-maestro.js",
     "lint": "expo lint"
   },
   "jest": {
