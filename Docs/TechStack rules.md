@@ -128,7 +128,7 @@ const Button = styled(Pressable, {
 
 ## 6. Testing
 
-### 6.1 Maestro Tests
+### 6.1 Maestro Tests (cancelled)
 yaml
 # Required test structure
 appId: com.yourapp
