@@ -16,13 +16,3 @@ jest.mock('expo-constants', () => ({
     },
   },
 }));
-
-// Mock Tamagui's native dependencies
-jest.mock('react-native-reanimated', () => ({}));
-jest.mock('@tamagui/core', () => ({
-  ...jest.requireActual('@tamagui/core'),
-  useTheme: () => ({
-    background: '#FFFFFF',
-    color: '#000000'
-  })
-}));
