@@ -15,5 +15,13 @@ const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
 const customRender = (ui: ReactElement, options = {}) =>
   render(ui, { wrapper: AllTheProviders, ...options });
 
+// Re-export everything
 export * from '@testing-library/react-native';
 export { customRender as render };
+
+// Add custom queries if needed later
+export const renderWithStore = (ui: ReactElement, options = {}) => {
+  return {
+    ...customRender(ui, options),
+  };
+};

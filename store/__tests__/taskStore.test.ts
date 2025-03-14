@@ -88,3 +88,11 @@ describe('Task Store', () => {
     expect(lists[0].color).toBe('blue');
   });
 });
+import { createTaskStore } from '../taskStore';
+
+describe('taskStore', () => {
+  it('should initialize with empty tasks', () => {
+    const store = createTaskStore();
+    expect(store.getState().tasks).toEqual([]);
+  });
+});
