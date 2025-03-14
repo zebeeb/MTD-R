@@ -1,18 +1,12 @@
 
 import React, { type ReactElement } from 'react';
 import { render } from '@testing-library/react-native';
-import { TamaguiProvider, createTamagui } from 'tamagui';
+import { TamaguiProvider } from 'tamagui';
 import config from '../tamagui.config';
-
-// Create a test-specific Tamagui instance with a default theme
-const testConfig = createTamagui({
-  ...config,
-  defaultTheme: 'light'
-});
 
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
   return (
-    <TamaguiProvider config={testConfig} defaultTheme="light">
+    <TamaguiProvider config={config}>
       {children}
     </TamaguiProvider>
   );
