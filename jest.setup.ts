@@ -2,6 +2,15 @@
 import '@testing-library/jest-dom';
 import { cleanup } from '@testing-library/react-native';
 
+// Mock Tamagui's native dependencies
+jest.mock('@tamagui/core', () => ({
+  ...jest.requireActual('@tamagui/core'),
+  useTheme: () => ({
+    background: '#FFFFFF',
+    color: '#000000'
+  })
+}));
+
 // Cleanup after each test
 afterEach(() => {
   cleanup();
