@@ -1,0 +1,19 @@
+
+# Test to verify tabs navigation in the app
+appId: com.todo.app
+---
+- launchApp
+- assertVisible: "Today"
+
+# Test navigation between tabs
+- tapOn: "Tomorrow"
+- assertVisible: "Tomorrow"
+- tapOn: "All tasks"
+- assertVisible: "All tasks"
+- tapOn: "Today"
+- assertVisible: "Today"
+
+# Verify app state persists across tab switches
+- tapOn: "Tomorrow"
+- tapOn: "Today"
+- assertVisible: "Today"

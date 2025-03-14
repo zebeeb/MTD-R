@@ -1,0 +1,10 @@
+
+# Basic test to verify app launches correctly and navigation works
+appId: com.todo.app
+---
+- launchApp
+- assertVisible: "Today"  # Verifying the "Today" tab is visible on launch
+- tapOn: "Tomorrow"       # Tap on the Tomorrow tab
+- assertVisible: "Tomorrow" # Verify navigation to Tomorrow tab worked
+- tapOn: "All tasks"      # Tap on the All tasks tab
+- assertVisible: "All tasks" # Verify navigation to All tasks tab worked

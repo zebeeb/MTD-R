@@ -1,0 +1,6 @@
+
+# Maestro Configuration
+# This file configures general settings for Maestro tests
+
+appId: com.todo.app  # Will be replaced with actual app ID later
+name: TodoApp Tests
