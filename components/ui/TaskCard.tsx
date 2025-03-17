@@ -1,106 +1,80 @@
-import { Card, Text, XStack, YStack } from "tamagui";
-import { memo } from "react";
 
-interface TaskCardProps {
-  title: string;
-  listName?: string;
-  listColor?: string;
-  listIcon?: string;
-  dueDate?: string;
+import { Stack, Text } from 'tamagui'
+import { useMemo } from 'react'
+
+type TaskCardProps = {
+  title: string
+  listName?: string 
+  listColor?: string
+  dueDate?: string
 }
 
-const formatDueDate = (date?: string): string => {
-  if (!date) return "";
-
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  const tomorrow = new Date(today);
-  tomorrow.setDate(tomorrow.getDate() + 1);
-
-  const yesterday = new Date(today);
-  yesterday.setDate(yesterday.getDate() - 1);
-
-  const dueDate = new Date(date);
-  dueDate.setHours(0, 0, 0, 0);
-
-  if (dueDate.getTime() === today.getTime()) return "Today";
-  if (dueDate.getTime() === tomorrow.getTime()) return "Tomorrow";
-  if (dueDate.getTime() === yesterday.getTime()) return "Yesterday";
-
-  return new Date(date).toLocaleDateString('en-US', {
-    day: 'numeric',
-    month: 'short',
-    year: 'numeric'
-  });
-};
-
-export const TaskCard = memo(({ 
-  title, 
-  listName, 
-  listColor = "#111212",
-  listIcon,
-  dueDate 
+export const TaskCard = ({ 
+  title,
+  listName,
+  listColor = '#111212', // Default background from specs
+  dueDate
 }: TaskCardProps) => {
-  const isDuePast = dueDate ? new Date(dueDate) < new Date() : false;
-  const formattedDate = formatDueDate(dueDate);
+  // Format due date based on spec requirements
+  const formattedDate = useMemo(() => {
+    if (!dueDate) return ''
+    const date = new Date(dueDate)
+    const today = new Date()
+    today.setHours(0, 0, 0, 0)
 
-  const adjustColor = (hex: string): string => {
-    return hex + "B3"; // 70% opacity
-  };
+    const tomorrow = new Date(today)
+    tomorrow.setDate(tomorrow.getDate() + 1)
+
+    const yesterday = new Date(today)
+    yesterday.setDate(yesterday.getDate() - 1)
+
+    if (date.getTime() === today.getTime()) return 'Today'
+    if (date.getTime() === tomorrow.getTime()) return 'Tomorrow'
+    if (date.getTime() === yesterday.getTime()) return 'Yesterday'
+    
+    return date.toLocaleDateString('en-US', { 
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric'
+    })
+  }, [dueDate])
 
   return (
-    <Card
-      borderRadius={12}
-      backgroundColor={listColor ? adjustColor(listColor) : "#111212"}
+    <Stack
+      backgroundColor={listColor}
       padding={16}
+      borderRadius={12}
+      marginVertical={5}
     >
-      <YStack>
+      <Text
+        color="#ffffff"
+        fontSize={14}
+        fontWeight="500"
+        numberOfLines={1}
+      >
+        {title}
+      </Text>
+      
+      {listName && (
+        <Stack flexDirection="row" marginTop={8}>
+          <Text color="#ffffff" fontSize={9}>
+            {listName}
+          </Text>
+        </Stack>
+      )}
+
+      {dueDate && (
         <Text
-          color="#ffffff"
-          fontSize={14}
-          fontWeight="500"
-          numberOfLines={1}
-          ellipsizeMode="tail"
-          fontFamily="Roboto"
+          color={formattedDate === 'Yesterday' ? '#ff1b1b' : '#a4a4a4'}
+          fontSize={9}
+          fontStyle={formattedDate === 'Yesterday' ? 'italic' : 'normal'}
+          position="absolute"
+          right={16}
+          top="50%"
         >
-          {title}
+          {formattedDate}
         </Text>
-
-        <XStack justifyContent="space-between" alignItems="center" marginTop={8}>
-          {listName && (
-            <XStack space={4} alignItems="center">
-              {listIcon && (
-                <Text fontSize={9} fontFamily="Roboto">
-                  {listIcon}
-                </Text>
-              )}
-              <Text 
-                color="#ffffff"
-                fontSize={9}
-                fontWeight="400"
-                fontFamily="Roboto"
-              >
-                {listName}
-              </Text>
-            </XStack>
-          )}
-
-          {dueDate && (
-            <Text
-              color={isDuePast ? "#ff1b1b" : "#a4a4a4"}
-              fontSize={9}
-              fontWeight="400"
-              fontStyle={isDuePast ? "italic" : "normal"}
-              fontFamily="Roboto"
-            >
-              {formattedDate}
-            </Text>
-          )}
-        </XStack>
-      </YStack>
-    </Card>
-  );
-});
-
-TaskCard.displayName = "TaskCard";
+      )}
+    </Stack>
+  )
+}
