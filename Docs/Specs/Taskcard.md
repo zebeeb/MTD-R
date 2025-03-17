@@ -117,3 +117,110 @@ Implementation Steps & Complexity 📊
 7. 6. **Manual testing** 
     - Add dummy data as in the design
     - show the cards in a new tab in the app
+
+
+# initial code ✅
+import React from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
+import { MaterialIcons } from '@expo/vector-icons';
+
+// Function to adjust background color
+const getBackgroundColor = (hex) => {
+  let hsl = hexToHSL(hex);
+  return `hsl(${hsl.h}, 70%, 7%)`; // Adjusted saturation and lightness
+};
+
+// Function to convert HEX to HSL
+const hexToHSL = (hex) => {
+  let r = parseInt(hex.substring(1, 3), 16) / 255;
+  let g = parseInt(hex.substring(3, 5), 16) / 255;
+  let b = parseInt(hex.substring(5, 7), 16) / 255;
+  let max = Math.max(r, g, b), min = Math.min(r, g, b);
+  let h, s, l = (max + min) / 2;
+  if (max === min) h = s = 0; 
+  else {
+    let d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    h = ((max === r ? (g - b) / d + (g < b ? 6 : 0) : 
+          max === g ? (b - r) / d + 2 : 
+                      (r - g) / d + 4) * 60);
+  }
+  return { h, s: s * 100, l: l * 100 };
+};
+
+// Task Item Component
+const TaskItem = ({ task }) => {
+  return (
+    <View style={[styles.taskContainer, { backgroundColor: getBackgroundColor(task.color) }]}>
+      {/* Task Info */}
+      <View style={styles.textContainer}>
+        <Text style={styles.title} numberOfLines={1}>{task.title}</Text>
+        <View style={styles.listContainer}>
+          <MaterialIcons name="shopping-basket" size={12} color="#bbb" style={styles.listIcon} />
+          <Text style={styles.listText}>{task.listName}</Text>
+        </View>
+      </View>
+
+      {/* Right Section (Due Date & Checkbox) */}
+      <View style={styles.rightContainer}>
+        <Text style={[styles.dueDate, { color: task.isOverdue ? 'red' : '#bbb' }]}>
+          {task.dueDate}
+        </Text>
+        <TouchableOpacity style={[styles.checkbox, { borderColor: task.color }]}>
+          {task.completed && <MaterialIcons name="check" size={18} color={task.color} />}
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+};
+
+// Styles
+const styles = {
+  taskContainer: {
+    flexDirection: 'row',
+    padding: 14,
+    marginBottom: 8,
+    borderRadius: 10,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  textContainer: {
+    flex: 1,
+  },
+  title: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#ffffff',
+    marginBottom: 4,
+  },
+  listContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  listIcon: {
+    marginRight: 4, // ✅ Ensures correct spacing
+  },
+  listText: {
+    fontSize: 9,
+    color: '#bbb',
+  },
+  rightContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  dueDate: {
+    fontSize: 10,
+    marginRight: 12, // ✅ Ensures proper spacing
+    alignSelf: 'center', // ✅ Ensures vertical alignment
+  },
+  checkbox: {
+    width: 24,
+    height: 24,
+    borderRadius: 5,
+    borderWidth: 2, // ✅ Thicker border for visibility
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+};
+
+export default TaskItem;
