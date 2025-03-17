@@ -4,8 +4,6 @@
 
 The task card represents individual tasks and their details in the to-do application, including title, associated list category, due date, and completion status.
 
-Design in attached_assets/image_1742221195577.png
-
 ## General Specifications
 
 - Font Family: Roboto throughout
