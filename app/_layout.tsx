@@ -62,7 +62,10 @@ function RootLayoutNav() {
       <QueryClientProvider client={queryClient}>
         <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
           <Stack>
-            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+            {/* Placeholder for Tabs component -  Actual implementation needed */}
+            <Tabs initialRouteName="task-cards" screenOptions={{ headerShown: false }}>
+              <Tabs.Screen name="task-cards" /> {/* Add other screens as needed */}
+            </Tabs>
           </Stack>
         </ThemeProvider>
       </QueryClientProvider>
