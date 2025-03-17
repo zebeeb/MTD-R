@@ -142,7 +142,7 @@ tests:
       - assertVisible: "Success State"
 
 
-### 6.2 Test Coverage Rules
+### 6.2 Manual Test Coverage Rules
 - Must 80% test coverage 
 - Must include error states
 - Must include loading states

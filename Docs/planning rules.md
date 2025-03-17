@@ -52,11 +52,9 @@ Whenever I ask you to prepare a technical plan, this technical plan must follow 
             - After the post is saved, the backend sends a success response (e.g., `201 Created`) back to the frontend.
             - The frontend receives the response and displays a success message to the user (e.g., "Post created successfully!").
             - The user might also be redirected to the post page or the homepage.
-11. End to end tests using Maestro, 80% minimum test coverage
+
 
 ### You must consider the following
-
-- How this feature integrates with existing features
 - Handle connected dependencies
 - TypeScript compilence
 - **Modularization and** Global Components
