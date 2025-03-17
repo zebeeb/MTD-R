@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Image } from 'react-native';
 import { Stack, Text, XStack, YStack, Button } from 'tamagui';
+import { ListIcon } from './ListIcon';
 
 // Define the task type
 type TaskProps = {
@@ -70,10 +70,7 @@ export const TaskCard = ({
             {title}
           </Text>
           <XStack space={4} marginTop={8} alignItems="center">
-            <Image 
-              source={require('../../assets/List Icons/shopping-basket.png')}
-              style={{ width: 12, height: 12 }}
-            />
+            <ListIcon size={12} color="#bbb" />
             <Text color="#bbb" fontSize={9}>
               {listName}
             </Text>
