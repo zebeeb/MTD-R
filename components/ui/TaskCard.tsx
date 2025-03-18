@@ -84,59 +84,61 @@ export const TaskCard = ({
     // - Parent Stack's 'space' prop will handle vertical gaps
     <Stack
       backgroundColor={getBackgroundColor(listColor)}
-      padding={16}
+      padding={8} // Fixed padding to 8px as per spec
       borderRadius={12}
       flexDirection="row"
       justifyContent="space-between"
       alignItems="center"
     >
-      <Stack flex={1}>
-        <Text
-          color="#ffffff"
-          fontSize={14}
-          fontWeight="500"
-          numberOfLines={1}
-        >
-          {title}
-        </Text>
-
-        {listName && (
-          <XStack space={4} marginTop={8} alignItems="center">
-            <MaterialIcons name="list" size={12} color="#bbb" />
-            <Text color="#bbb" fontSize={9}>
-              {listName}
-            </Text>
-          </XStack>
-        )}
-      </Stack>
-
-      <XStack space={12} alignItems="center">
-        {dueDate && (
+      <XStack flex={1} alignItems="center" justifyContent="space-between">
+        <Stack>
           <Text
-            color={isOverdue ? '#ff1b1b' : '#a4a4a4'}
-            fontSize={9}
-            fontStyle={isOverdue ? 'italic' : 'normal'}
+            color="#ffffff"
+            fontSize={14}
+            fontWeight="500"
+            numberOfLines={1}
           >
-            {formattedDate}
+            {title}
           </Text>
-        )}
 
-        <TouchableOpacity 
-          onPress={onToggleComplete}
-          style={{
-            width: 24,
-            height: 24,
-            borderRadius: 5,
-            borderWidth: 2,
-            borderColor: listColor,
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          {completed && (
-            <MaterialIcons name="check" size={18} color={listColor} />
+          {listName && (
+            <XStack space={4} marginTop={8} alignItems="center">
+              <MaterialIcons name="list" size={12} color={listColor} />
+              <Text color={listColor} fontSize={9}>
+                {listName}
+              </Text>
+            </XStack>
           )}
-        </TouchableOpacity>
+        </Stack>
+
+        <XStack space={12} alignItems="center">
+          {dueDate && (
+            <Text
+              color={isOverdue ? '#ff1b1b' : '#a4a4a4'}
+              fontSize={9}
+              fontStyle={isOverdue ? 'italic' : 'normal'}
+            >
+              {formattedDate}
+            </Text>
+          )}
+
+          <TouchableOpacity 
+            onPress={onToggleComplete}
+            style={{
+              width: 24,
+              height: 24,
+              borderRadius: 5,
+              borderWidth: 2,
+              borderColor: listColor,
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            {completed && (
+              <MaterialIcons name="check" size={18} color={listColor} />
+            )}
+          </TouchableOpacity>
+        </XStack>
       </XStack>
     </Stack>
   );
