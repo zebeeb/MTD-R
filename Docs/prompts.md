@@ -105,11 +105,11 @@ lets plan for fixing this bug following @Docs/bugs resolution rules.md , @Docs/p
 - don't provide edit requests till I approve your work
 
 ## bug fixing
+I approve, let's implement this bug fix plan
 
-let's implement this bug fix plan
-
-follow the rules in @Docs/TechStack rules.md
-stricktly follow the @Docs/project rules.md and @Docs/bugs resolution rules.md
-before implementing, be extremely thorough in understanding the documents mentioned here and the codebase
-{provide edit requests}
-add comment above each edit explaining what this change it about
+- this implementation is to serve the project @Docs/project scope.md and tech stack setup plan @Docs/setup plan.md
+- follow the rules in @Docs/TechStack rules.md
+- stricktly follow the @Docs/project rules.md and @Docs/bugs resolution rules.md
+- before implementing, be extremely thorough in understanding the documents mentioned here and the codebase
+- {provide edit requests}
+- add comment above each edit explaining what this change it about

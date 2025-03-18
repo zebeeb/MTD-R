@@ -84,7 +84,7 @@ export const TaskCard = ({
     // - Parent Stack's 'space' prop will handle vertical gaps
     <Stack
       backgroundColor={getBackgroundColor(listColor)}
-      padding={17} // Updated padding to 17px as per spec
+      padding={8} // Fixed padding to 8px as per spec
       borderRadius={12}
       flexDirection="row"
       justifyContent="space-between"
