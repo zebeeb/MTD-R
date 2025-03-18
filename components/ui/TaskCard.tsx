@@ -1,4 +1,3 @@
-
 import { Stack, Text, XStack } from 'tamagui'
 import { useMemo } from 'react'
 import { MaterialIcons } from '@expo/vector-icons'
@@ -62,7 +61,7 @@ export const TaskCard = ({
     if (date.getTime() === today.getTime()) return 'Today';
     if (date.getTime() === tomorrow.getTime()) return 'Tomorrow';
     if (date.getTime() === yesterday.getTime()) return 'Yesterday';
-    
+
     return date.toLocaleDateString('en-US', { 
       day: 'numeric',
       month: 'short',
@@ -79,12 +78,10 @@ export const TaskCard = ({
   }, [dueDate]);
 
   return (
-    {/* 
-    Stack component spacing fix:
-    - Remove marginVertical as it conflicts with parent Stack spacing
-    - This component should not control its own external spacing
-    - Parent Stack's 'space' prop will handle vertical gaps
-    */}
+    // Stack component spacing:
+    // - Remove marginVertical as it conflicts with parent Stack spacing
+    // - This component should not control its own external spacing
+    // - Parent Stack's 'space' prop will handle vertical gaps
     <Stack
       backgroundColor={getBackgroundColor(listColor)}
       padding={16}
@@ -102,7 +99,7 @@ export const TaskCard = ({
         >
           {title}
         </Text>
-        
+
         {listName && (
           <XStack space={4} marginTop={8} alignItems="center">
             <MaterialIcons name="list" size={12} color="#bbb" />
