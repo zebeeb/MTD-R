@@ -79,11 +79,16 @@ export const TaskCard = ({
   }, [dueDate]);
 
   return (
+    {/* 
+    Stack component spacing fix:
+    - Remove marginVertical as it conflicts with parent Stack spacing
+    - This component should not control its own external spacing
+    - Parent Stack's 'space' prop will handle vertical gaps
+    */}
     <Stack
       backgroundColor={getBackgroundColor(listColor)}
       padding={16}
       borderRadius={12}
-      marginVertical={5}
       flexDirection="row"
       justifyContent="space-between"
       alignItems="center"

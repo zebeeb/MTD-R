@@ -43,7 +43,12 @@ export default function TestScreen() {
 
   return (
     <ScrollView>
-      <Stack padding={16} space={8}>
+      {/* 
+Parent Stack spacing update:
+- Set space prop to 5 to match design spec
+- This centralizes spacing control at the list level
+*/}
+<Stack padding={16} space={5}>
         {sampleTasks.map((task, index) => (
           <TaskCard
             key={index}
