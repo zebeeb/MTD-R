@@ -97,6 +97,31 @@ dont mention issues that will be covered in future phases in the setup plan @Doc
 Don't provide edit requests for any changes now till I approve
 
 
+## feature planning
+we will build the task card, specs in @Docs/Specs/Taskcard.md and design attached
+
+Analyze this document in the light of @Docs/project rules.md and @Docs/TechStack rules.md
+
+- ask all the questions you have, be critical.
+- highlight if the specs contradict with our rules
+- mention potential optimization to maximize the balance between simplicity, bugs prevention, and scalability.
+- for each step explain in easy english as I have limited coding experience
+- before providing a plan, be extremely thorough in understanding the documents mentioned here and the codebase
+- no edit requests now till I approve your plan.
+- give me complexity assessment for each step
+
+## feature implementation
+- lets implement the task card component, following the specs doc @Docs/Specs/Taskcard.md
+
+- for maximum accuracy, in the specs document @Docs/Specs/Taskcard.md, under the title "# initial code" i added a react native code for you as a starting point. you must use this code and adopt it to our code base, and apply our rules on, specially tamagui rules. DONT start from scratch
+
+- follow the rules in @Docs/TechStack rules.md, @Docs/project rules.md
+- before I approve and give you the greenlight to implement, confirm that you understand the task and that you can see the "initial code" section
+- ask if you have any questions
+- don't provide edit requests till I approve your work
+- manual testing
+  - in the today and tomorrow tab, add the dummy tasks list we currently have under the test cards tab
+
 ## bugs plan
 lets plan for fixing this bug following @Docs/bugs resolution rules.md , @Docs/project rules.md, and @Docs/TechStack rules.md
 - before providing a plan, be extremely thorough in understanding the documents mentioned here and the codebase

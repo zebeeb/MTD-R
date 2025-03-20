@@ -48,7 +48,7 @@ Parent Stack spacing update:
 - Set space prop to 5 to match design spec
 - This centralizes spacing control at the list level
 */}
-<Stack padding={16} space={5}>
+<Stack padding={6} space={5}>
         {sampleTasks.map((task, index) => (
           <TaskCard
             key={index}

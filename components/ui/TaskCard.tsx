@@ -84,7 +84,8 @@ export const TaskCard = ({
     // - Parent Stack's 'space' prop will handle vertical gaps
     <Stack
       backgroundColor={getBackgroundColor(listColor)}
-      padding={8} // Fixed padding to 8px as per spec
+      paddingVertical={8} // Top and bottom padding set to 8px
+      paddingHorizontal={15} // Left and right padding set to 17px
       borderRadius={12}
       flexDirection="row"
       justifyContent="space-between"
@@ -94,9 +95,9 @@ export const TaskCard = ({
         {/* Title section */}
         <XStack justifyContent="space-between" alignItems="center">
           <Text
-            color="#ffffff"
-            fontSize={14}
-            fontWeight="500"
+            color="#ddd"
+            fontSize={16}
+            fontWeight="300"
             numberOfLines={1}
             flex={1}
             marginRight={12}
@@ -125,11 +126,11 @@ export const TaskCard = ({
 
         {/* Bottom row for list name and due date */}
         {(listName || dueDate) && (
-          <XStack marginTop={8} justifyContent="space-between" alignItems="center">
+          <XStack marginTop={4} justifyContent="space-between" alignItems="center">
             {listName ? (
               <XStack space={4} alignItems="center">
-                <MaterialIcons name="list" size={12} color={listColor} />
-                <Text color={listColor} fontSize={9}>
+                <MaterialIcons name="list" size={14} color={listColor} />
+                <Text color={listColor} fontSize={12}>
                   {listName}
                 </Text>
               </XStack>
@@ -140,7 +141,7 @@ export const TaskCard = ({
             {dueDate && (
               <Text
                 color={isOverdue ? '#ff1b1b' : '#a4a4a4'}
-                fontSize={9}
+                fontSize={10}
                 fontStyle={isOverdue ? 'italic' : 'normal'}
               >
                 {formattedDate}
